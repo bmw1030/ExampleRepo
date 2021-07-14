@@ -1,0 +1,4 @@
+outs:
+- md5: 7d2363e0a5e25e2760dd4d41380a430d
+  size: 649
+  path: pipeline.py

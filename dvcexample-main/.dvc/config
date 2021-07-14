@@ -1,0 +1,6 @@
+[core]
+    remote = gdrivestorage
+['remote "storage"']
+    url = s3://irissru
+['remote "gdrivestorage"']
+    url = gdrive://1ZlVimITwpq8CN7zDvIu_EwBdDYg72Tli

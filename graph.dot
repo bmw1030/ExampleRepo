@@ -1,0 +1,54 @@
+digraph GIT {
+fontname="Helvetica";
+label="./git-graphviz \n/C/Users/Adam-PC/Desktop/College/XSEDE/DVCexample\nWed Jul 14 11:41:21 EDT 2021";
+	subgraph cluster_refs_heads_6401346 {
+    label="6401346";
+    fontsize=24;
+    color=blue;
+    style=dotted;
+"5c06e0beed7c73c0749e5d41d4abc96ee980756c" -> "905270034d4759b2a8031ab1d9b2adcfb4813f39" [dir=back];
+ "905270034d4759b2a8031ab1d9b2adcfb4813f39" -> "aa5fffbfb82e86051964677cd0ca90ec2e417042" [dir=back];
+ "aa5fffbfb82e86051964677cd0ca90ec2e417042" -> "64013469c9cc3db2ab3ce9082940922cc88c7183" [dir=back];
+ "64013469c9cc3db2ab3ce9082940922cc88c7183" -> "8058b27b82260668fd30b622a4d7cafc060803e1" [dir=back];
+ "8058b27b82260668fd30b622a4d7cafc060803e1" -> "root"[dir=back];
+
+  }
+	subgraph cluster_refs_heads_convert {
+    label="convert";
+    fontsize=24;
+    color=blue;
+    style=dotted;
+"a66fb038ef8268b3d7218f7a62ac0a9157020545" -> "9f1f989830804d5c5a07d25a7543ea18afeedcf6" [dir=back];
+ "9f1f989830804d5c5a07d25a7543ea18afeedcf6" -> "64013469c9cc3db2ab3ce9082940922cc88c7183" [dir=back];
+ "64013469c9cc3db2ab3ce9082940922cc88c7183" -> "8058b27b82260668fd30b622a4d7cafc060803e1" [dir=back];
+ "8058b27b82260668fd30b622a4d7cafc060803e1" -> "root"[dir=back];
+
+  }
+	subgraph cluster_refs_heads_main {
+    label="main";
+    fontsize=24;
+    color=blue;
+    style=dotted;
+"3aab375090a783ab24057dc34b4a13eac7ad7516" -> "5c06e0beed7c73c0749e5d41d4abc96ee980756c"[dir=back];
+"3aab375090a783ab24057dc34b4a13eac7ad7516" -> "a66fb038ef8268b3d7218f7a62ac0a9157020545" [dir=back];
+ "a66fb038ef8268b3d7218f7a62ac0a9157020545" -> "9f1f989830804d5c5a07d25a7543ea18afeedcf6" [dir=back];
+ "9f1f989830804d5c5a07d25a7543ea18afeedcf6" -> "64013469c9cc3db2ab3ce9082940922cc88c7183" [dir=back];
+ "5c06e0beed7c73c0749e5d41d4abc96ee980756c" -> "905270034d4759b2a8031ab1d9b2adcfb4813f39" [dir=back];
+ "905270034d4759b2a8031ab1d9b2adcfb4813f39" -> "aa5fffbfb82e86051964677cd0ca90ec2e417042" [dir=back];
+ "aa5fffbfb82e86051964677cd0ca90ec2e417042" -> "64013469c9cc3db2ab3ce9082940922cc88c7183" [dir=back];
+ "64013469c9cc3db2ab3ce9082940922cc88c7183" -> "8058b27b82260668fd30b622a4d7cafc060803e1" [dir=back];
+ "8058b27b82260668fd30b622a4d7cafc060803e1" -> "root"[dir=back];
+
+  }
+# Node list
+  "3aab375090a783ab24057dc34b4a13eac7ad7516" [label=" (HEAD -> refs/heads/main, refs/remotes/origin/main)\nMerge branch 'convert' Converting xml file to csv\n2 hours ago",shape=tripleoctagon,style=filled,color=black,fillcolor=salmon]
+  "f57841bba1628c91947898533ffb37c6a3b1ac84" [label=" (refs/stash)\nOn convert: data/iris.csv\n2 hours ago",shape=box,style=filled,color=black,fillcolor=white]
+  "ba729419faa5c9a2818745023051efc5e6bb07d8" [label="index on convert: a66fb03 Added iris schema file to describe the columns in iris.csv\n2 hours ago",shape=box,style=filled,color=black,fillcolor=white]
+  "a66fb038ef8268b3d7218f7a62ac0a9157020545" [label=" (refs/remotes/origin/convert, refs/heads/convert)\nAdded iris schema file to describe the columns in iris.csv\n2 hours ago",shape=tripleoctagon,style=filled,color=black,fillcolor=salmon]
+  "9f1f989830804d5c5a07d25a7543ea18afeedcf6" [label="Added csv format of iris dataset.\n2 hours ago",shape=box,style=filled,color=black,fillcolor=white]
+  "5c06e0beed7c73c0749e5d41d4abc96ee980756c" [label=" (refs/heads/6401346)\nRerted back to original form of Iris dataset.\n22 hours ago",shape=tripleoctagon,style=filled,color=black,fillcolor=salmon]
+  "905270034d4759b2a8031ab1d9b2adcfb4813f39" [label="Duplicated data to show how DVC tracks changes in datasets, and to be used later in order to revert back to the previous snapshot\n22 hours ago",shape=box,style=filled,color=black,fillcolor=white]
+  "aa5fffbfb82e86051964677cd0ca90ec2e417042" [label="Configured gdrive storage and s3 as backup\n25 hours ago",shape=box,style=filled,color=black,fillcolor=white]
+  "64013469c9cc3db2ab3ce9082940922cc88c7183" [label="Added Iris dataset\n25 hours ago",shape=box,style=filled,color=black,fillcolor=white]
+  "8058b27b82260668fd30b622a4d7cafc060803e1" [label="Initialized DVC in repo\n26 hours ago",shape=box,style=filled,color=black,fillcolor=white]
+}
